@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Chat</title>
+	<style>
+		body {
+			margin: 50px;
+			font-family: sans-serif;
+			text-align: center;
+		}
+		
+		a {
+			display: inline-block;
+			padding: 10px;
+			background: #e0e0e0;
+			border: 1px solid #bbb;
+			border-radius: 3px;
+			font-size: 0;
+		}
+		
+		a::before {
+			content: attr(data-prompt);
+			font-size: 1rem;
+		}
+	</style>
+</head>
+<body>
+	<a href="javascript:var s=document.createElement('script');s.src='http://cerebro.shiftactive.com:10002/chat.js';document.body.appendChild(s);" data-prompt="Arrástrame a tus favoritos">Chat</a>
+</body>
+</html>
